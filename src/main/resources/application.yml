@@ -1,0 +1,25 @@
+server:
+  port: 9999
+  address: 0.0.0.0
+
+spring:
+  datasource:
+    username: root
+    password: 332771
+    url: jdbc:mysql:///manage ?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone = GMT
+  redis:
+    port: 6379
+    host: 192.168.50.222
+
+
+logging:
+  level:
+    com.zuzu: debug
+
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: deleted
+      logic-not-delete-value: 0
+      logic-delete-value: 1
+
